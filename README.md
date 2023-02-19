@@ -39,4 +39,4 @@ Tools : Visual Studio Code , Expo.
 
 # Application ScreenShot
 
-<img src="https://github.com/akshay0077/Expense-Tracker-App/blob/Deployment/Spend-Tracker.png" height="2500px">
+<img src="https://github.com/akshay0077/Expense-Tracker-App/blob/Deployment/Spend-Tracker.png" height="1000px" width="1000px">

@@ -63,7 +63,7 @@ const Add = ({ navigation }) => {
         <Text
           variant="title1"
           color="primary2"
-          style={{ marginLeft: 30, fontSize: 18 }}
+          style={{ marginLeft: 20, fontSize: 15 }}
         >
           Add Amount
         </Text>
@@ -79,7 +79,7 @@ const Add = ({ navigation }) => {
           marginTop="m"
         >
           <Text variant="title" color="primary">
-            ₦
+          ₹
           </Text>
 
           <TextInput
@@ -87,8 +87,9 @@ const Add = ({ navigation }) => {
             placeholder="Amount"
             keyboardType="number-pad"
             style={{
+              outline:"none",
               padding: 10,
-              fontSize: 30,
+              fontSize: 25,
               fontFamily: "RRegular",
               width: "80%",
             }}
@@ -99,7 +100,7 @@ const Add = ({ navigation }) => {
           />
 
           <Text variant="title" color="primary" style={{ fontSize: 20 }}>
-            NGN
+            INR
           </Text>
         </Box>
 
@@ -107,10 +108,11 @@ const Add = ({ navigation }) => {
           <TextInput
             ref={titleRef}
             placeholderTextColor={theme.colors.primary}
-            placeholder="Expenses made for"
+            placeholder="Description..."
             defaultValue={title}
             style={{
-              fontSize: 30,
+              outline:"none",
+              fontSize: 25,
               fontFamily: "RRegular",
               width: "80%",
             }}

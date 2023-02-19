@@ -8,19 +8,19 @@ import Animated, { eq, interpolate } from "react-native-reanimated";
 
 import { withTransition } from "react-native-redash";
 import theme, { Box, Text } from "../../components/theme";
-import { Delete } from "../Svgs";
+// import { Delete } from "../Svgs";
 
 const Expense = ({ index, transition, onTap, onDelete, item, allDates }) => {
   const isActive = eq(transition, index);
   const activeTransition = withTransition(isActive, { duration: 200 });
 
-  //already commented code
+  //already commited
   // const delX = interpolate(activeTransition, {
   //   inputRange: [0, 1],
   //   outputRange: [-100, 20],
   // });
 
-  //new Commited code
+  //new commited
   // const hidePrice = interpolate(activeTransition, {
   //   inputRange: [0, 1],
   //   outputRange: [1, 0],
@@ -53,16 +53,16 @@ const Expense = ({ index, transition, onTap, onDelete, item, allDates }) => {
                 }}
               >
                 <Animated.Text>{item.title}</Animated.Text>
-                {/* <Animated.Text
-                  style={{
-                    opacity: hidePrice,
-                    color: item.price > 0 ? "#009BFC" : "#FF4500",
-                  }}
+                <Animated.Text
+                  // style={{
+                  //   opacity: hidePrice,
+                  //   color: item.price > 0 ? "#009BFC" : "#FF4500",
+                  // }}
                 >
                   {item.price > 0
                     ? `₦${item.price}`
                     : `- ₦${Math.abs(item.price)}`}
-                </Animated.Text> */}
+                </Animated.Text>
               </Animated.View>
             </View>
 
@@ -75,7 +75,6 @@ const Expense = ({ index, transition, onTap, onDelete, item, allDates }) => {
                 height: 50,
                 width: "14%",
                 // right: delX,
-                
                 alignItems: "center",
                 flexDirection: "row",
                 justifyContent: "center",
@@ -88,7 +87,8 @@ const Expense = ({ index, transition, onTap, onDelete, item, allDates }) => {
                     onDelete(index);
                   }}
                 >
-                  <Delete />
+                  {/* <Delete /> */}
+                  {/* Delete FabIcons Add Here */}
                 </TouchableOpacity>
               </Text>
             </Animated.View>

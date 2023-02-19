@@ -205,7 +205,8 @@ const Transactions = ({ navigation }) => {
       </Box>
       <Box style={{ position: "absolute", right: 20, bottom: 50, zIndex: 4 }}>
         <TouchableOpacity onPress={onNavigate}>
-          <AddIcon />
+          {/* <AddIcon /> */}
+          {/* Fabicon */}
         </TouchableOpacity>
       </Box>
     </ImageBackground>
